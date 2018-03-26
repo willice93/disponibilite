@@ -1,0 +1,22 @@
+#envoyer
+{
+	padding: 25px;
+}
+.vert
+{
+	color: green;
+}
+.rouge
+{
+	color: red;
+}
+.taille
+{
+	width: 20px;
+	height: 20px;
+}
+.centrer 
+{
+    display: flex;
+    flex-direction: row;
+}
