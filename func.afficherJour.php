@@ -1,5 +1,9 @@
 <?php
-function AfficherJour($tab){
+function AfficherJour($tab,$salle){
+	if (isset($salle)==false) {
+		$salle=0;
+		
+	}
 	//fonction qui prend un tableau et renvoi les valeur des seance en tableau de chiffres
 	//si le tableau existe
 	if (isset($tab)==true) {
@@ -17,7 +21,7 @@ function AfficherJour($tab){
 	else {$date=date('Y-m-d');}
 for ($i=1; $i <7 ; $i++) {
 //ecrire
-            $seance[$i]='<div class="centrer"><div><a href="reservation.php?seance='.$i.'&jour='.$date.'"><img class="taille" src="val.png"></div><div><span class="vert"><ul>séance'.$i.'</ul></div></a></div>';
+            $seance[$i]='<div class="centrer"><div><a href="reservation.php?seance='.$i.'&jour='.$date.'&salle='.$salle.'"><img class="taille" src="val.png"></div><div><span class="vert"><ul>séance'.$i.'</ul></div></a></div>';
            for ($r=0; $r <$j ; $r++) { 
 // r allant jusqua la taille du tableau s
                 if ($i==$tab[$r]) {

@@ -33,9 +33,9 @@ include('func.afficherJour.php');?>
 	</thead>
 	<tbody>
   <tr class="succes">
-    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,1);$jour=afficherJour($dispo);echo $jour; ?> </th>
-    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,2);$jour=afficherJour($dispo); echo $jour; ?></th>
-    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,3);$jour=afficherJour($dispo); echo $jour; ?></th>
+    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,1);$jour=afficherJour($dispo,1);echo $jour; ?> </th>
+    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,2);$jour=afficherJour($dispo,2); echo $jour; ?></th>
+    <th class="tg-yw4l"><?php $dispo=verifieDispo($today,3);$jour=afficherJour($dispo,3); echo $jour; ?></th>
   </tr>
   </tbody>
 </table>
