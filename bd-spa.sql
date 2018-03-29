@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 26 mars 2018 à 04:05
+-- Généré le :  jeu. 29 mars 2018 à 18:56
 -- Version du serveur :  10.1.30-MariaDB
 -- Version de PHP :  7.2.1
 
@@ -100,15 +100,15 @@ INSERT INTO `salle` (`idsalle`, `numsalle`, `nomsalle`) VALUES
 CREATE TABLE `usager` (
   `idusage` bigint(20) NOT NULL,
   `nom` varchar(50) DEFAULT NULL,
-  `prenom` varchar(50) DEFAULT NULL
+  `mail` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `usager`
 --
 
-INSERT INTO `usager` (`idusage`, `nom`, `prenom`) VALUES
-(1, 'demo', 'demo d');
+INSERT INTO `usager` (`idusage`, `nom`, `mail`) VALUES
+(1, 'demo', '');
 
 --
 -- Index pour les tables déchargées
