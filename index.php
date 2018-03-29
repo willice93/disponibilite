@@ -14,9 +14,14 @@ include('func.afficherJour.php');?>
 	<div class="container">
             <div class="row">
             <div id="envoyer" class="col-lg-6">
-	    <form action="disponible.php" method="POST"><input type="date" name="jour">
-         <input type="submit" name="validez">
-	    </form>
+	   <form action="disponible.php" method="POST" class="form-group col-lg-2" >
+	<div class="input-group">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+	<input type="date" name="jour" class="form-control col-lg-2">
+	</div>	
+
+<input type="submit" name="validez" class="btn btn-default">
+	</form>
 	        </div>
 	        </div>
 	<?php $today=date('Y-m-d');?>
