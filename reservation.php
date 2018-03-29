@@ -10,7 +10,7 @@ $horaires[6]='20h30 22h30';
 $date=$_GET['jour'];
 $numseance=$_GET['seance'];
 $heure=$horaires[$numseance];
-
+if ($date == NULL){$date=date('Y-m-d');}
 
 echo '<p>vous desirez reserver le '.$date.' de '.$heure .'?</p>'
 ;echo'<br>';
@@ -29,11 +29,6 @@ echo '';
 <div class="form-group col-lg-3 ">
 <form action="resaMembre.php" method="POST" class="">
 	
-	<label>oui</label>   <input type="radio" name="x" value="oui"  class=" " >
-  <label>non</label> <input type="radio" name="x" value="non" class="" >
-
-
-  
     <div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 	<input type="texte" name="nom" class="form-control">
@@ -46,6 +41,8 @@ echo '';
 					<br>
 					<input type="submit" name="confirmez" class="btn btn-success"">
 </form>
+
+<br>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="KUJP6WTPNMXAW">

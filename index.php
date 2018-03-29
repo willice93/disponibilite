@@ -19,8 +19,8 @@ include('func.afficherJour.php');?>
 	<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 	<input type="date" name="jour" class="form-control col-lg-2">
 	</div>	
-
-<input type="submit" name="validez" class="btn btn-default">
+<br>
+<input type="submit" name="validez" class="btn btn-success">
 	</form>
 	        </div>
 	        </div>
@@ -28,6 +28,7 @@ include('func.afficherJour.php');?>
 
 	<div class="row">
 	<div class="col-lg-6">
+		<?php echo $today;?>
 <table class="table table-bordered table-striped table-condensed">
 	<thead>
 		<tr class="success">
