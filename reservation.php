@@ -39,7 +39,8 @@ echo '';
 					
 					</div>
 					<br>
-					<input type="submit" name="confirmez" class="btn btn-success"">
+					<input type="submit" name="confirmez" class="btn btn-success">
+					<a href="index.php" class="btn btn-success">Annuler</a>
 </form>
 
 <br>
