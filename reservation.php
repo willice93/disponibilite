@@ -7,12 +7,13 @@ $horaires[4]='15h30 à 17h30';
 $horaires[5]='18h00 à 20h00';
 $horaires[6]='20h30 22h30';
 
+$salle=$_GET['salle'];
 $date=$_GET['jour'];
 $numseance=$_GET['seance'];
 $heure=$horaires[$numseance];
 if ($date == NULL){$date=date('Y-m-d');}
 
-echo '<p>vous desirez reserver le '.$date.' de '.$heure .'?</p>'
+echo '<p>vous desirez reserver la salle n°'.$salle.' le '.$date.' de '.$heure .'?</p>'
 ;echo'<br>';
 echo '';
 ?>
@@ -35,8 +36,14 @@ echo '';
 	</div>
 			<br>		<div class="input-group">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-					<input type="texte" name="prenom" class="form-control">
 					
+					<input type="texte" name="prenom" class="form-control">
+					<?php 
+					echo '<input type="hidden" name="seance" value="'.$numseance.'" ?>';
+					echo '<input type="hidden" name="salle" value="'.$salle.'" ?>';
+					echo '<input type="hidden" name="jour" value="'.$date.'" ?>';
+
+					?>
 					</div>
 					<br>
 					<input type="submit" name="confirmez" class="btn btn-success">
