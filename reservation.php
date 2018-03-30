@@ -7,6 +7,10 @@ $horaires[4]='15h30 à 17h30';
 $horaires[5]='18h00 à 20h00';
 $horaires[6]='20h30 22h30';
 
+
+
+
+
 $salle=$_GET['salle'];
 $date=$_GET['jour'];
 $numseance=$_GET['seance'];
@@ -37,7 +41,7 @@ echo '';
 			<br>		<div class="input-group">
 				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
 					
-					<input type="texte" name="prenom" class="form-control">
+					<input type="texte" name="email" class="form-control">
 					<?php 
 					echo '<input type="hidden" name="seance" value="'.$numseance.'" ?>';
 					echo '<input type="hidden" name="salle" value="'.$salle.'" ?>';
